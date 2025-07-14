@@ -1,32 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Guhan A.R - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0a192f;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem 4rem;
+            background-color: white;
+            margin: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0a192f;
+            border-bottom: 2px solid #64ffda;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        .experience-item, .project, .education, .achievement {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-box {
+            background-color: #f0f8ff;
+            border-left: 4px solid #0a192f;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>My Name</h1>
-        <p>Welcome to My Professional Portfolio</p>
+        <h1>Guhan A.R</h1>
+        <p>Welcome to My Portfolio</p>
+        <div class="contact-info">
+            <span><i class="fas fa-envelope"></i> <a href="mailto:arguhan55@gmail.com">arguhan55@gmail.com</a></span>
+            <span><i class="fas fa-phone"></i> 8838565778</span>
+            <span><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</span>
+            <span><i class="fas fa-birthday-cake"></i> 03-02-2004</span>
+            <span><i class="fab fa-github"></i> <a href="https://github.com/Guhan-AR" target="_blank">GitHub</a></span>
+            <span><i class="fas fa-code"></i> <a href="https://leetcode.com/Guhan_A_R" target="_blank">LeetCode</a></span>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate developer interested in building cool things.</p>
+        <p>I am a passionate Computer Science student enthusiastic about creating meaningful software solutions. I thrive in collaborative environments, embrace challenges, and enjoy turning ideas into reality with technology.</p>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project One</h3>
-            <p>A description of my first amazing project.</p>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <h4><strong>Beauroi Technologies – Django Fullstack Developer Intern (03/2025 – Present)</strong></h4>
+            <ul>
+                <li>Contributed to the Human Resource Management System, implementing key features like poll creation within the announcement panel.</li>
+                <li>Developed a custom color picker tool to enhance user interface personalization.</li>
+                <li>Ensured clean, maintainable code and a user-friendly interface across multiple modules.</li>
+                </ul>
+                <h4><strong>Hospital Management System (In Progress):</strong> Architecting a scalable backend system for a comprehensive hospital platform using Django REST Framework and React.</h4>
+<ul>
+                <li>Emphasizing modular design patterns and efficient API integration to support large-scale data operations.</li>
+                <li>Tech Stack: Django, Django REST Framework, React, HTML, CSS, JavaScript</li>
+            </ul>
         </div>
     </section>
 
-    <footer>
-        <p>Contact me at: my.email@example.com</p>
-    </footer>
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <strong>HR Management System</strong>
+            <ul>
+                <li>Real-time attendance, leave management, full CRUD for employee data.</li>
+                <li>Tech Stack: Django, Python, HTML, CSS, JavaScript.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <strong>Ecommerce Website for Rural People</strong>
+            <ul>
+                <li>Simple UI/UX with support for regional languages and low data usage.</li>
+                <li>Tech Stack: Django, Python, HTML, CSS, JavaScript.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Educational Qualification</h2>
+        <div class="education">
+            <p>B.E in Computer Science Engineering (2021 – 2025) – 7.39 CGPA</p>
+            <p>Rathinam Technical Campus, Coimbatore</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-box">
+                <strong>Languages</strong>
+                <p>HTML, CSS, JavaScript, Python</p>
+            </div>
+            <div class="skill-box">
+                <strong>Databases</strong>
+                <p>MongoDB, PostgreSQL</p>
+            </div>
+            <div class="skill-box">
+                <strong>UI/UX Tools</strong>
+                <p>Figma, Adobe XD</p>
+            </div>
+            <div class="skill-box">
+                <strong>Frameworks</strong>
+                <p>Django, React.js</p>
+            </div>
+            <div class="skill-box">
+                <strong>Version Control</strong>
+                <p>Git</p>
+            </div>
+            <div class="skill-box">
+                <strong>Soft Skills</strong>
+                <p>Teamwork, Leadership, Time Management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement">
+            <ul>
+                <li>Solved 100+ problems on LeetCode.</li>
+                <li>Completed key modules in HRMS using Django.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages">
+        <h2>Languages Known</h2>
+        <p>Tamil, English, Kannada</p>
+    </section>
 </body>
+
 </html>
