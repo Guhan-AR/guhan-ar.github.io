@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guhan A.R - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Guhan A.R - Fullstack Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        /* Keeping your existing CSS structure for consistency */
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
             background-color: #0a192f;
             color: white;
-            padding: 2rem;
+            padding: 3rem 1rem;
             text-align: center;
         }
 
         header h1 {
             font-size: 3rem;
             margin: 0;
-            color: white;
+            color: #64ffda; /* Added a highlight color */
         }
 
         header p {
             font-size: 1.2rem;
             margin: 0.5rem 0;
+            color: #8892b0;
         }
 
         .contact-info {
@@ -38,48 +40,89 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 1.5rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-size: 1rem;
         }
 
         .contact-info a {
-            color: #64ffda;
+            color: #e6f1ff;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #64ffda;
         }
 
         section {
-            padding: 2rem 4rem;
+            padding: 2rem;
+            max-width: 1000px; /* Constrain width for readability */
+            margin: 2rem auto;
             background-color: white;
-            margin: 1rem;
-            border-radius: 12px;
+            border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             color: #0a192f;
-            border-bottom: 2px solid #64ffda;
+            border-bottom: 3px solid #64ffda;
             padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        h4 {
+            margin-bottom: 0.5rem;
+            color: #172a45;
         }
 
         ul {
             padding-left: 1.5rem;
         }
 
-        .experience-item, .project, .education, .achievement {
-            margin-bottom: 1.5rem;
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item, .project, .education, .achievement, .certification {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+        
+        .experience-item:last-child, .project:last-child {
+            border-bottom: none;
         }
 
         .skill-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
         }
 
         .skill-box {
             background-color: #f0f8ff;
-            border-left: 4px solid #0a192f;
-            padding: 1rem;
-            border-radius: 8px;
+            border-left: 5px solid #0a192f;
+            padding: 1.2rem;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-box strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            color: #0a192f;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .contact-info { flex-direction: column; gap: 0.5rem; }
+            section { margin: 1rem; padding: 1.5rem; }
         }
     </style>
 </head>
@@ -87,64 +130,65 @@
 <body>
     <header>
         <h1>Guhan A.R</h1>
-        <p>Welcome to My Portfolio</p>
+        <p>Full-Stack Django Developer | Computer Science Undergraduate</p>
         <div class="contact-info">
             <span><i class="fas fa-envelope"></i> <a href="mailto:arguhan55@gmail.com">arguhan55@gmail.com</a></span>
             <span><i class="fas fa-phone"></i> 8838565778</span>
             <span><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</span>
-            <span><i class="fas fa-birthday-cake"></i> 03-02-2004</span>
-            <span><i class="fab fa-github"></i> <a href="https://github.com/Guhan-AR" target="_blank">GitHub</a></span>
-            <span><i class="fas fa-code"></i> <a href="https://leetcode.com/Guhan_A_R" target="_blank">LeetCode</a></span>
+            <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/guhanar" target="_blank">LinkedIn</a></span>
+            <span><i class="fab fa-github"></i> <a href="https://guhan-ar.github.io" target="_blank">Portfolio/GitHub</a></span>
         </div>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate Computer Science student enthusiastic about creating meaningful software solutions. I thrive in collaborative environments, embrace challenges, and enjoy turning ideas into reality with technology.</p>
+        <h2>Career Objective</h2>
+        <p>
+            Motivated and hands-on Computer Science undergraduate with real-world experience in full-stack Django development. 
+            Passionate about building scalable tech solutions that solve real problems, especially in underserved areas. 
+            Eager to contribute to innovative teams and turn ideas into impactful products.
+        </p>
     </section>
 
     <section id="experience">
         <h2>Professional Experience</h2>
         <div class="experience-item">
-            <h4><strong>Beauroi Technologies – Django Fullstack Developer Intern (03/2025 – Present)</strong></h4>
+            <h4><strong>Django Fullstack Developer Intern</strong> | Beauroi Technologies, Chennai</h4>
+            <p><em>March 2025 - Present</em></p>
             <ul>
-                <li>Contributed to the Human Resource Management System, implementing key features like poll creation within the announcement panel.</li>
-                <li>Developed a custom color picker tool to enhance user interface personalization.</li>
-                <li>Ensured clean, maintainable code and a user-friendly interface across multiple modules.</li>
-                </ul>
-                <h4><strong>Hospital Management System (In Progress):</strong> Architecting a scalable backend system for a comprehensive hospital platform using Django REST Framework and React.</h4>
-<ul>
-                <li>Emphasizing modular design patterns and efficient API integration to support large-scale data operations.</li>
-                <li>Tech Stack: Django, Django REST Framework, React, HTML, CSS, JavaScript</li>
+                <li><strong>Project:</strong> Human Resource Management System (HRMS).</li>
+                <li>Spearheaded development of 4+ key features improving UX, leading to a <strong>30% increase in employee engagement</strong>.</li>
+                <li>Built and deployed an interactive poll feature, improving team communication by <strong>40%</strong>.</li>
+                <li>Engineered a custom UI color picker adopted by <strong>70% of users</strong>, boosting personalization.</li>
+                <li>Ensured clean code using Django best practices, reducing bugs by <strong>20%</strong> across sprint cycles.</li>
+                <li>Collaborated with the backend team to deliver weekly updates, reducing delivery time by <strong>20%</strong>.</li>
             </ul>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Key Projects</h2>
 
         <div class="project">
-            <strong>HR Management System</strong>
+            <h4>HR Management System</h4>
+            <p><em>Tech Stack: Django, Python, HTML, CSS, JavaScript</em></p>
             <ul>
-                <li>Real-time attendance, leave management, full CRUD for employee data.</li>
-                <li>Tech Stack: Django, Python, HTML, CSS, JavaScript.</li>
+                <li>Designed a centralized platform for attendance, leave tracking, and data management.</li>
+                <li><strong>Impact:</strong> Reduced manual entry time by <strong>50%</strong> through automated workflows.</li>
+                <li>Streamlined leave approval process, cutting turnaround time from <strong>2 days to 1 hour</strong>.</li>
+                <li>Integrated robust CRUD operations for 100+ employee records with role-based access control.</li>
             </ul>
         </div>
 
         <div class="project">
-            <strong>Ecommerce Website for Rural People</strong>
+            <h4>E-Commerce Platform for Rural Communities</h4>
+            <p><em>Tech Stack: Django, Python, HTML, CSS, JavaScript</em></p>
             <ul>
-                <li>Simple UI/UX with support for regional languages and low data usage.</li>
-                <li>Tech Stack: Django, Python, HTML, CSS, JavaScript.</li>
+                <li>Engineered a mobile-first site optimized for low internet and regional users.</li>
+                <li><strong>Performance:</strong> Shrank data usage by <strong>40%</strong> and raised user session time by <strong>25%</strong>.</li>
+                <li>Integrated multilingual support (3+ regional languages) to increase accessibility.</li>
+                <li>Reduced load times by <strong>60%</strong> in poor connectivity areas.</li>
+                <li>Achieved a <strong>75% successful purchase rate</strong> during trial runs with 200+ test users.</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Educational Qualification</h2>
-        <div class="education">
-            <p>B.E in Computer Science Engineering (2021 – 2025) – 7.39 CGPA</p>
-            <p>Rathinam Technical Campus, Coimbatore</p>
         </div>
     </section>
 
@@ -152,29 +196,35 @@
         <h2>Technical Skills</h2>
         <div class="skill-grid">
             <div class="skill-box">
-                <strong>Languages</strong>
-                <p>HTML, CSS, JavaScript, Python</p>
-            </div>
-            <div class="skill-box">
-                <strong>Databases</strong>
-                <p>MongoDB, PostgreSQL</p>
-            </div>
-            <div class="skill-box">
-                <strong>UI/UX Tools</strong>
-                <p>Figma, Adobe XD</p>
+                <strong>Programming Languages</strong>
+                <p>Python, JavaScript, HTML, CSS</p>
             </div>
             <div class="skill-box">
                 <strong>Frameworks</strong>
-                <p>Django, React.js</p>
+                <p>Django, Django REST Framework, React, Bootstrap</p>
             </div>
             <div class="skill-box">
-                <strong>Version Control</strong>
-                <p>Git</p>
+                <strong>Databases</strong>
+                <p>PostgreSQL, MongoDB</p>
             </div>
             <div class="skill-box">
-                <strong>Soft Skills</strong>
-                <p>Teamwork, Leadership, Time Management</p>
+                <strong>Tools & DevOps</strong>
+                <p>Docker, Git, GitHub, Postman, Insomnia, VS Code</p>
             </div>
+            <div class="skill-box">
+                <strong>UI/UX</strong>
+                <p>Figma</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certification">
+            <ul>
+                <li><strong>Python and Django Framework For Beginners</strong> - Horizon Tech (Udemy)</li>
+                <li><strong>The Complete Django REST Frameworks Bootcamp</strong> - Kona Pavan Kumar (Udemy)</li>
+            </ul>
         </div>
     </section>
 
@@ -182,16 +232,20 @@
         <h2>Achievements</h2>
         <div class="achievement">
             <ul>
-                <li>Solved 100+ problems on LeetCode.</li>
-                <li>Completed key modules in HRMS using Django.</li>
+                <li>Conducted a community tech session for <strong>20+ youth</strong> in my village to demystify programming.</li>
+                <li>Developed and deployed features improving UX for <strong>50+ HRMS users</strong>.</li>
+                <li>Solved <strong>100+ problems</strong> on LeetCode.</li>
             </ul>
         </div>
     </section>
 
-    <section id="languages">
-        <h2>Languages Known</h2>
-        <p>Tamil, English, Kannada</p>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <h4>B.E. in Computer Science and Engineering</h4>
+            <p><strong>Rathinam Technical Campus, Coimbatore</strong> | <em>2021 - 2025</em></p>
+            <p>CGPA: 7.39</p>
+        </div>
     </section>
 </body>
-
 </html>
